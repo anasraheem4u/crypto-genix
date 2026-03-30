@@ -40,10 +40,22 @@ SUPABASE_SETUP.md
 *.tsbuildinfo
 next-env.d.ts
 
-# generated SQL files (optional, but good to keep out of repo if they contain keys)
-# NEXUS_TRADE_DATABASE_SETUP.sql
-# MAKE_ADMIN.sql
-# MAKE_EMAIL_ADMIN.sql
-# ENABLE_RLS.sql
-# check_admin2.js
-# verify_admin.js
+# ── Non-production SQL & debug files ──────────────────────────
+# Keep only CRYPTO_GENIX_DATABASE_SETUP.sql (the master schema)
+ADD_USERS.sql
+MAKE_ADMIN.sql
+MAKE_EMAIL_ADMIN.sql
+ENABLE_RLS.sql
+COMPLETE_DATABASE_SETUP.sql
+NEXUS_TRADE_DATABASE_SETUP.sql
+WITHDRAWAL_SYSTEM_SETUP.sql
+NOTIFICATION_SYSTEM_SETUP.sql
+supabase_rls_fix.sql
+update_initial_balance.sql
+
+# debug / utility scripts
+check_admin2.js
+verify_admin.js
+verify_anon.js
+*.log
+admin_check_debug.log
