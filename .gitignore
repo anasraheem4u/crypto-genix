@@ -1,0 +1,49 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+admin_check_debug.log*
+
+# local env files
+.env
+.env*
+.env*.local
+
+# vercel
+.vercel
+
+# supabase setup
+SUPABASE_SETUP.md
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# generated SQL files (optional, but good to keep out of repo if they contain keys)
+# NEXUS_TRADE_DATABASE_SETUP.sql
+# MAKE_ADMIN.sql
+# MAKE_EMAIL_ADMIN.sql
+# ENABLE_RLS.sql
+# check_admin2.js
+# verify_admin.js
